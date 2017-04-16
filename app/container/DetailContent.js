@@ -1,19 +1,13 @@
 import React,{Component}from "react";
 import { connect } from 'react-redux';
-import { getalltype } from '../action/Action.js';
-function title(){
-	alltypes.map(item,key) =>{
-		return item.title;
-			}
-	}
+import { getalltype,showbigtipbox } from '../action/Action.js';
+
 
 var DetailContent = ({alltypes}) => {
-	
-	
 		return (
 				<div className='DetailContent'>
 				    <img src='/assets/images/DetailContent.jpg'/>
-				    	 <h4 className='title_name'>title</h4>
+				    	 <h4 className='title_name'></h4>
 						
 					
 				   
@@ -30,8 +24,8 @@ var DetailContent = ({alltypes}) => {
 				</div>
 			)
 	}
-	}
-}
+	
+
 DetailContent = connect(
 	(state)=>{
 		return {
@@ -40,8 +34,8 @@ DetailContent = connect(
 			
 		}
 	},{
-		getalltype,
-		title
+		getalltype
+		
 	}
 )(DetailContent);
 

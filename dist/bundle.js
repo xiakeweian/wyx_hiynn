@@ -15170,10 +15170,87 @@ exports.default = Arvhive_product;
 
 /***/ }),
 /* 147 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-throw new Error("Module build failed: SyntaxError: C:/phpnow/htdocs/app/container/DetailContent.js: Unexpected token, expected ; (5:24)\n\n\u001b[0m \u001b[90m 3 | \u001b[39m\u001b[36mimport\u001b[39m { getalltype } from \u001b[32m'../action/Action.js'\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m 4 | \u001b[39m\u001b[36mfunction\u001b[39m title(){\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 5 | \u001b[39m\talltypes\u001b[33m.\u001b[39mmap(item\u001b[33m,\u001b[39mkey) \u001b[33m=>\u001b[39m{\n \u001b[90m   | \u001b[39m\t                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 6 | \u001b[39m\t\t\u001b[36mreturn\u001b[39m item\u001b[33m.\u001b[39mtitle\u001b[33m;\u001b[39m\n \u001b[90m 7 | \u001b[39m\t\t\t}\n \u001b[90m 8 | \u001b[39m\t}\u001b[0m\n");
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRedux = __webpack_require__(8);
+
+var _Action = __webpack_require__(9);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var DetailContent = function DetailContent(_ref) {
+	var alltypes = _ref.alltypes;
+
+	return _react2.default.createElement(
+		'div',
+		{ className: 'DetailContent' },
+		_react2.default.createElement('img', { src: '/assets/images/DetailContent.jpg' }),
+		_react2.default.createElement('h4', { className: 'title_name' }),
+		_react2.default.createElement(
+			'div',
+			{ className: 'ProductManager' },
+			'\u8D1F\u8D23\u4EBA:\u90ED\u5FD7\u5F3A'
+		),
+		_react2.default.createElement(
+			'div',
+			{ className: 'TwoPart' },
+			_react2.default.createElement(
+				'span',
+				null,
+				'\u516C\u5B89\uFF0C\u6307\u6325\u4E2D\u5FC3'
+			),
+			_react2.default.createElement(
+				'span',
+				null,
+				'2017.4.13\u521B\u5EFA'
+			)
+		),
+		_react2.default.createElement(
+			'ul',
+			{ className: 'bottom_part' },
+			_react2.default.createElement(
+				'li',
+				{ className: 'addproduct', onClick: function onClick() {
+						event.stopPropagation();undefined.props.showbigtipbox(false);
+					} },
+				'\u6DFB\u52A0'
+			),
+			_react2.default.createElement(
+				'li',
+				null,
+				'\u4E0A\u4F20'
+			),
+			_react2.default.createElement(
+				'li',
+				{ className: 'lastone' },
+				'...'
+			)
+		)
+	);
+};
+
+DetailContent = (0, _reactRedux.connect)(function (state) {
+	return {
+		"alltypes": state.indexReducer.alltypes
+
+	};
+}, {
+	getalltype: _Action.getalltype
+
+})(DetailContent);
+
+exports.default = DetailContent;
 
 /***/ }),
 /* 148 */

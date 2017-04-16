@@ -2,6 +2,9 @@
 	margin: 0;
 	padding: 0;
 }
+ul{
+	list-style:none;
+}
 @media screen and (min-width:1366px) and (max-width:1920px){
            body{
              
