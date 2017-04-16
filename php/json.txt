@@ -1,16 +1,12 @@
-{
-	"myproduct" : [
-		{	'myproductID':1,
-			"imgurl" : "/assets/images/DetailContent.jpg" ,
-			"title" : "重庆指挥中心重庆指挥中心",
-			'manager':'郭志强',
-			"Department" : "公安，指挥中心",
-			"create_time" : "2017.4.14"
-			'ellipsis':{
-				'project_phase':[1]
-				}
-
+{			
+	"myproductID":1,
+	"imgurl" : "/assets/images/DetailContent.jpg" ,
+	"title" : "重庆指挥中心重庆指挥中心",
+	'manager':'郭志强',
+	"Department" : "公安,指挥中心",
+	"create_time" : "2017.4.14",
+	"ellipsis":{
+		"project_phase":1
 		}
-	
-	]
+
 }

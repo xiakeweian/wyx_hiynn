@@ -1,12 +1,22 @@
 import React,{Component}from "react";
 import { connect } from 'react-redux';
 import { getalltype } from '../action/Action.js';
+function title(){
+	alltypes.map(item,key) =>{
+		return item.title;
+			}
+	}
+
 var DetailContent = ({alltypes}) => {
-		
+	
+	
 		return (
 				<div className='DetailContent'>
 				    <img src='/assets/images/DetailContent.jpg'/>
-				    <h4 className='title_name'>{alltypes.myproduct[0].title}</h4>
+				    	 <h4 className='title_name'>title</h4>
+						
+					
+				   
 				    <div className='ProductManager'>负责人:郭志强</div>
 				    <div className='TwoPart'> 
 				    	<span>公安，指挥中心</span>
@@ -19,6 +29,8 @@ var DetailContent = ({alltypes}) => {
 				    </ul>
 				</div>
 			)
+	}
+	}
 }
 DetailContent = connect(
 	(state)=>{
@@ -28,7 +40,8 @@ DetailContent = connect(
 			
 		}
 	},{
-		getalltype
+		getalltype,
+		title
 	}
 )(DetailContent);
 
